@@ -1,8 +1,10 @@
 const assert = require('assert').strict;
-const package = require('../../package.json')
+const package = require('../../package.json');
 
 // Terraform download source contants
-const TF_ROOT_URI = `https://releases.hashicorp.com/terraform/${package.version}/terraform_${package.version}_`;
+const TF_ROOT_URI = `https://releases.hashicorp.com/terraform/${
+  package.version
+}/terraform_${package.version}_`;
 const TF_ZIP_URIS = {
   DARWIN: 'darwin_amd64.zip',
   FREEBSD_32: 'freebsd_386.zip',
@@ -27,7 +29,7 @@ const TF_ZIP_URIS = {
 function notifyIncompatible(platform, arch) {
   console.error(
     `Unfortunately, your platform and architecture (${platform}, ${arch}) ` +
-    "isn't currently supported by Terraform. Please uninstall this package."
+      "isn't currently supported by Terraform. Please uninstall this package."
   );
 }
 
@@ -99,7 +101,7 @@ async function matchPlatformToUrl(platform, arch) {
   if (platformString === undefined) {
     console.error(
       `Could not find a download path for the platform '${platform}', the ` +
-      `arch '${arch}', and the generated key '${platformKey}'.`
+        `arch '${arch}', and the generated key '${platformKey}'.`
     );
     process.exit(12);
   }

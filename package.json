@@ -1,14 +1,14 @@
 {
-  "name": "terraform-npm",
-  "version": "0.12.13",
+  "name": "@smburrows/terraform-npm",
+  "version": "0.12.14",
   "description": "An NPM executable package for HashiCorp's Terraform.",
-  "homepage": "https://www.npmjs.com/package/terraform-npm",
-  "repository": "https://github.com/steven-xie/terraform-npm",
+  "homepage": "https://github.com/SMBurrows/terraform-npm",
+  "repository": "https://github.com/SMBurrows/terraform-npm",
   "bugs": {
-    "url": "https://github.com/steven-xie/terraform-npm/issues",
-    "email": "dev@stevenxie.me"
+    "url": "https://github.com/SMBurrows/terraform-npm/issues",
+    "email": "steviemburrows@gmail.com"
   },
-  "author": "Steven Xie <hello@stevenxie.me>",
+  "author": "Steven Burrows",
   "license": "AAL",
   "private": false,
   "os": [

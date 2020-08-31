@@ -1,6 +1,6 @@
 {
   "name": "@smburrows/terraform-npm",
-  "version": "0.12.28",
+  "version": "0.13.1",
   "description": "An NPM executable package for HashiCorp's Terraform.",
   "homepage": "https://github.com/SMBurrows/terraform-npm",
   "repository": "https://github.com/SMBurrows/terraform-npm",

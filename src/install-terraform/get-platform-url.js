@@ -77,7 +77,7 @@ function matchPlatformToKey(platform, arch) {
   switch (platform) {
     case 'linux': return 'LINUX' + matchArch();
     case 'darwin':
-      if (arch !== 'x64') errorOut();
+      if (arch !== 'x64' && arch !== 'arm64') errorOut();
       else return 'DARWIN';
     case 'freebsd': return 'FREEBSD' + matchArch();
     case 'openbsd': return 'OPENBSD' + matchArch(false);
